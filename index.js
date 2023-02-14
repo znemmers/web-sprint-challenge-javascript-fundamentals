@@ -118,7 +118,7 @@ console.log(lowerCaseNames(zooAnimals))
     const reducedPop = array.reduce((accumulator, currentValue) => {
       return accumulator + currentValue.popluation;
     }, 0)
-    return reducedPop;
+    return reducedPop
   }
   console.log(USApop(zooAnimals))
   
@@ -240,15 +240,11 @@ class CuboidMakerTwo{
     this.width = 5;
     this.height = 5;
   }
-}
-class volume extends CuboidMakerTwo{
-  constructor(length, width, height){
-    return super(length) * super(width) * super(height)
+  volume(){
+    return this.length * this.width * this.height
   }
-}
-class surfaceArea extends CuboidMakerTwo{
-  constructor(length, width, height){
-    return 2 * (super(length) * super(width) + super(length) * super(height) + super(width) * super(height))
+  surfaceArea(){
+    return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)
   }
 }
 
