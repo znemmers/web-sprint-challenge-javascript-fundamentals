@@ -116,7 +116,7 @@ console.log(lowerCaseNames(zooAnimals))
 
   function USApop(array){
     const reducedPop = array.reduce((accumulator, currentValue) => {
-      return accumulator + currentValue.popluation;
+      return accumulator + currentValue.population;
     }, 0)
     return reducedPop
   }
